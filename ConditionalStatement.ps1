@@ -4,4 +4,4 @@ if ($x -gt 10) {Write-Host "This is if statement"
 $x--}
 else {Write-Host "This is else statement"
 $x--}
-Write-host "this is a t"
+Write-host "this is a test"
