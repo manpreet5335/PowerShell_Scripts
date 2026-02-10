@@ -8,7 +8,7 @@ git *Hello World!*
 ## This is heading 2
 ### This is heading 3
 --- This is horizontal rule
-##Fruits
+##Fruitsg
 + Apple
     + Apple pie
     + Apple Juice
@@ -36,3 +36,13 @@ git *Hello World!*
 -[x] Do reading
 
 -[x] Solve practice questions
+
+1. firsdt
+1. second
+1. third
+2. fourth
+2. fifth
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
