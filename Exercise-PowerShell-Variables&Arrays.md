@@ -7,6 +7,7 @@
 ```ps
 function prompt {'firstname-PS'}
 ```
+## PART A : Variables
 Create a variable named process and store the running processes in it.
 ```ps
 Get-process
@@ -87,7 +88,8 @@ $env:COMPUTERNAME
 $env:USERNAME
 ```
 
-## Use-Case: Identifying Large Files Before a Server Storage Upgrade
+**Use-Case: Identifying Large Files Before a Server Storage Upgrade**
+
 Consider a scenario where users have reported that the server is running out of disk space.Before requesting additional storage hardware, you want to determine whether a small number of unusually large files are consuming most of the available space.
  
 Write a script that prompt the administrator to enter the location of shared folder or drive. It recursilvely scans all subfolders, files and filters for files larger than 100MB. It counts how many large files exist and display a summary showing the number of large files found.
@@ -98,4 +100,35 @@ $rawFileData = Get-ChildItem -Path $path -Recurse
 $largeFiles = $rawFileData | Where-Object {$_.Length -gt 100MB}
 $largeFilesCount = $largeFiles | Measure-Object | Select-Object -ExpandProperty Count
 Write-Host "You have $largeFilesCount large file(s) in $path"
+```
+## PART B Arrays
+
+Arrays are a fundamental feature of PowerShell. Arrays make it possible to ingest, manipulate and output true data structures. When working with an array, you can either use the same command to perform the same function on each item within an array or access and manipulate individual item using an index.
+
+Let's create our first array that represents bowl of fruit.
+```ps
+$fruit = @('Apples','Oranges','Bananas')
+```
+You can read the array using 
+```ps
+$fruit
+```
+which will return
+`Apples`
+`Oranges`
+`Bananas`
+Powershell will automatically index them in the way "Apple" will be indexed as 0, "Oranges" as 1, and "Bananas" as 1.
+
+Create an empty array now.
+```ps
+$data = @()
+```
+To check how many items are in the array, use `count` function
+```ps
+$data.count
+```
+Now add data to the array
+```ps
+$data = @('zero', 'one' , 'two' , 'three')
+$data
 ```
