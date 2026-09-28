@@ -6,3 +6,5 @@ Run any script:
 ''powershell
 .\ScriptName.ps1
 
+This is awesome way of learning
+
