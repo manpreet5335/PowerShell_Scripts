@@ -7,3 +7,5 @@ Run any script:
 .\ScriptName.ps1
 **This is a starting point of your PowerShell Journey.**
 
+This is awesome way of learning
+
