@@ -5,4 +5,5 @@ Practice makes you perfect. This is on new-feature branch.
 Run any script:
 ''powershell
 .\ScriptName.ps1
+**This is a starting point of your PowerShell Journey.**
 
